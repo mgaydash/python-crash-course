@@ -34,3 +34,20 @@ print(favorite_language.rstrip() + "<")
 favorite_language = " python "
 print(">" + favorite_language + "<")
 print(">" + favorite_language.rstrip().lstrip() + "<")
+
+# Chapter 2 - Numbers
+
+# Math
+print(3 + 3)
+print(3 - 3)
+print(3 * 3)
+print(3 ** 3) # Exponent
+print (4 % 3) # Mod
+
+# Floats
+# Note decimal places in output
+print(0.2 * 0.2)
+
+# Printing numbers w/ Strings
+# print("Hello " + 77) << Error
+print("Hello " + str(77))
