@@ -1,8 +1,14 @@
-# Chapter 1
+# Chapter 1 - Hello World
+print("Chapter 1")
+print("#########################################")
+
 message = "Hello Pyton World!"
 print(message)
 
 # Chapter 2 - Variables
+print("\nChapter 2")
+print("#########################################")
+
 message = "Hello Pyton Crash Course World!"
 print(message)
 
@@ -53,6 +59,8 @@ print(0.2 * 0.2)
 print("Hello " + str(77))
 
 # Chapter 3 - Lists
+print("\nChapter 3")
+print("#########################################")
 
 lyrics = ["can", "I", "get", "another", "amen"]
 print(lyrics)
@@ -130,3 +138,79 @@ test_list = ["one", "two", "three", "four", "five"]
 print(test_list[4])
 print(test_list[-1])
 print(test_list[-2])
+
+# Chapter 4 - Lists and Loops
+print("\nChapter 4")
+print("#########################################")
+
+# Loop contents are determined by indentation
+
+magicians = ["alice", "david", "carolina"]
+for magician in magicians:
+  print(magician)
+
+# Doing more in a loop
+for magician in magicians:
+  print("Damn, " + magician.title() + ", that was a neat trick")
+  print("Wow!")
+
+# range() in for loop << probably not useful ??
+for num in range(1, 5):
+  print(num)
+
+# range() to create a list
+print(list(range(1, 5)))
+
+# Start w/2, add 2, continue until <= 11
+print(list(range(2, 11, 2)))
+
+# List of first 10 squares
+squares = []
+for num in range(1, 11):
+  squares.append(num**2)
+print(squares)
+
+# List comprehensions
+squares = [num**2 + 1 for num in range(1, 11)]
+print(squares)
+
+# Working with part of a list
+
+# List slicing
+# Second index is exclusive
+players = ["tom", "lisa", "kyle", "megan", "erin"]
+print(players)
+print(players[1:3])
+
+# Both indices are optional
+print(players)
+print(players[2:])
+print(players[:3])
+
+# Slices can be looped
+for player in players[:3]:
+  print("Hey, " + player.title())
+
+# By omitting the start and end index, a list can be copied
+my_foods = ["pizza", "burger", "fries", "hotdog"]
+print("My foods are:")
+print(my_foods)
+
+friend_foods = my_foods[:]
+friend_foods.append("sushi")
+friend_foods.remove("pizza")
+print("My friend's foods are:")
+print(friend_foods)
+
+# Tuples - Immutable lists
+
+dimensions = (100, 50)
+print(dimensions[0])
+print(dimensions[1])
+# dimensions[1] = 200 << Error
+
+# Tuples can be iterated just like lists
+
+# Tuples can be reassigned
+dimensions = (200, 100)
+print(dimensions)
