@@ -147,16 +147,16 @@ print("#########################################")
 
 magicians = ["alice", "david", "carolina"]
 for magician in magicians:
-  print(magician)
+    print(magician)
 
 # Doing more in a loop
 for magician in magicians:
-  print("Damn, " + magician.title() + ", that was a neat trick")
-  print("Wow!")
+    print("Damn, " + magician.title() + ", that was a neat trick")
+    print("Wow!")
 
 # range() in for loop << probably not useful ??
 for num in range(1, 5):
-  print(num)
+    print(num)
 
 # range() to create a list
 print(list(range(1, 5)))
@@ -167,7 +167,7 @@ print(list(range(2, 11, 2)))
 # List of first 10 squares
 squares = []
 for num in range(1, 11):
-  squares.append(num**2)
+    squares.append(num**2)
 print(squares)
 
 # List comprehensions
@@ -189,7 +189,7 @@ print(players[:3])
 
 # Slices can be looped
 for player in players[:3]:
-  print("Hey, " + player.title())
+    print("Hey, " + player.title())
 
 # By omitting the start and end index, a list can be copied
 my_foods = ["pizza", "burger", "fries", "hotdog"]
@@ -214,3 +214,7 @@ print(dimensions[1])
 # Tuples can be reassigned
 dimensions = (200, 100)
 print(dimensions)
+
+# Styling
+# Indent using 4 spaces
+# Generally speaking, lines should be no more than 80 characters long
