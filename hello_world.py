@@ -219,7 +219,7 @@ print(dimensions)
 # Indent using 4 spaces
 # Generally speaking, lines should be no more than 80 characters long
 
-# Chapter 4 - Conditional Statements
+# Chapter 5
 print("\nChapter 5")
 print("#########################################")
 
@@ -278,3 +278,71 @@ for topping in requested_toppings:
     else:
         print(topping + " is not available.")
 print("Your pizza is ready!")
+
+# Chapter 6 - Dictionaries
+print("\nChapter 6")
+print("#########################################")
+
+# Simple dictionary example
+alien = {"color": "green", "points": 5}
+print(alien)
+print(alien["color"])
+print(alien["points"])
+
+# Dictionary keys are dynamic
+alien["x_position"] = 0
+alien["y_position"] = 155
+print(alien)
+
+# Dictionary values are also dynamic
+alien["color"] = "red"
+print(alien)
+
+# Keys can be deleted
+alien["hair_color"] = "purple"
+print(alien)
+del alien["hair_color"]
+print(alien)
+
+# Multi-line dictionary
+# The crash-course book says the closing curly brace should be indented. Sounds dumb to me.
+favorite_languages = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'ruby',
+    'phil': 'python',
+}
+
+print("Sara's favorite language is " +
+    favorite_languages["sarah"].title()
+    + ".")
+
+# Looping through a dictionary
+print("Favorite Languages:")
+for key, value in favorite_languages.items():
+    print(key.title() + "'s favorite language is "
+        + value.title() + "."
+        )
+
+# Can also print just keys
+print("The following people were surveyed for their favorite language:")
+for key in favorite_languages.keys():
+    print(key.title())
+
+# The default behavior is the same as calling .keys()
+for key in favorite_languages:
+    print(key.title())
+
+# Keys can be sorted
+for key in sorted(favorite_languages):
+    print("Hello, " + key.title() + ".")
+
+# Dictionary values can be iterated too
+print("The following languages have been mentioned:")
+for value in favorite_languages.values():
+    print(value.title())
+
+# Set can be used to eliminate duplicates
+print("Unique languages:")
+for value in set(favorite_languages.values()):
+    print(value.title())
