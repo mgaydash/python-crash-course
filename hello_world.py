@@ -218,3 +218,63 @@ print(dimensions)
 # Styling
 # Indent using 4 spaces
 # Generally speaking, lines should be no more than 80 characters long
+
+# Chapter 4 - Conditional Statements
+print("\nChapter 5")
+print("#########################################")
+
+# String comparison
+cars = ["bmw", "audi", "toyota", "subaru"]
+print(cars)
+
+for car in cars:
+    if "bmw" == car.lower():
+        print(car.upper())
+    else:
+        print(car)
+
+# Numeric comparison
+age = 21
+print(age == 18)
+print(age > 18)
+print(age < 18)
+print(age > 18 and age < 30)
+print(age > 30 or age < 25)
+
+# Checking if a value is (not) in a list
+cars = ["bmw", "audi", "toyota", "subaru"]
+print(cars)
+print("ford" in cars)
+if "ford" not in cars:
+    cars.append("ford")
+print(cars)
+print("ford" in cars)
+
+# If Statements and the if-elif-else chain
+age = 19
+if age > 18:
+    print("You are old enough to vote!")
+    print("Have you registered to vote yet?")
+elif age == 18:
+    print("Dang, daddy, you 18!")
+else:
+    print("Sorry. You are not old enough to vote.")
+
+# Checking if lists are empty
+requested_toppings = ["onion", "peppers"]
+if requested_toppings:
+    for topping in requested_toppings:
+        print("You've requested " + topping + ".")
+else:
+    print("There are no pizza toppings.")
+
+# Multiple list example
+available_toppings = ["cheese", "pepperoni", "onion", "peppers", "mushrooms"]
+requested_toppings = ["pepperoni", "cheese", "french fries"]
+
+for topping in requested_toppings:
+    if topping in available_toppings:
+        print(topping + " added to pizza.")
+    else:
+        print(topping + " is not available.")
+print("Your pizza is ready!")
