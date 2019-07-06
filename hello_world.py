@@ -47,8 +47,8 @@ print(">" + favorite_language.rstrip().lstrip() + "<")
 print(3 + 3)
 print(3 - 3)
 print(3 * 3)
-print(3 ** 3) # Exponent
-print (4 % 3) # Mod
+print(3 ** 3)  # Exponent
+print(4 % 3)  # Mod
 
 # Floats
 # Note decimal places in output
@@ -64,7 +64,7 @@ print("#########################################")
 
 lyrics = ["can", "I", "get", "another", "amen"]
 print(lyrics)
-print(lyrics[1]) # Indices start at 0
+print(lyrics[1])  # Indices start at 0
 
 # Can lists have mixed contents? << Yes
 mixed_list = ["string", 7, {"name": "Joe"}]
@@ -314,15 +314,15 @@ favorite_languages = {
 }
 
 print("Sara's favorite language is " +
-    favorite_languages["sarah"].title()
-    + ".")
+      favorite_languages["sarah"].title()
+      + ".")
 
 # Looping through a dictionary
 print("Favorite Languages:")
 for key, value in favorite_languages.items():
     print(key.title() + "'s favorite language is "
-        + value.title() + "."
-        )
+          + value.title() + "."
+          )
 
 # Can also print just keys
 print("The following people were surveyed for their favorite language:")
